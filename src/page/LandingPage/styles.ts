@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div `
     
-    margin: 110px;
+    padding: 110px;
 
 `
 
