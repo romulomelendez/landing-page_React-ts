@@ -1,3 +1,3 @@
-import React from 'react'
+import { LandingPage } from './page/LandingPage'
 
-export const App: React.FC = () => <h1>TEST</h1>
+export const App: React.FC = () => <LandingPage />
