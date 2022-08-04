@@ -1,0 +1,1 @@
+export const TheNavBar: React.FC = () => <h1>NavBar</h1>
