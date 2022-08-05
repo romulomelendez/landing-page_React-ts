@@ -12,7 +12,7 @@ export const NavBar = styled.nav `
 export const MiniContainer =  styled.div `
 
     display: grid;
-    grid-template-columns: 125px 50px;
+    grid-template-columns: 150px 50px;
     place-items: center;
     column-gap: 0.8rem;
     height: 100%;
