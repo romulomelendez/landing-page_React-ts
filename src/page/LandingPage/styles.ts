@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.div `
     
+    display: grid;
+    grid-template-rows: 200px 1fr 1fr 1fr;
     padding: 110px;
 
 `
@@ -17,4 +19,3 @@ export const Subtitle =  styled.h4 `
     color: #808080;
 
 `
-
