@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 
 import { NavBar, Text, MiniContainer, Img } from './styles'
 
@@ -6,12 +6,12 @@ import Pagcom_logo from '../../assets/images/Pagcom_logo.png'
 
 export const TheNavBar: React.FC = () => {
     
-    useEffect(() => {
-        fetch(import.meta.env.VITE_BASE_API_URL + 'posts')
-         .then( response => response.json() )
-         .then( data => console.log(data) )
+    // useEffect(() => {
+    //     fetch(import.meta.env.VITE_BASE_API_URL + 'posts')
+    //      .then( response => response.json() )
+    //      .then( data => console.log(data) )
         
-    }, [])
+    // }, [])
     
     
     return (
