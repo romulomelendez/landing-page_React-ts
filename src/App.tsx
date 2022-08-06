@@ -7,5 +7,5 @@ export const App: React.FC = () => (
         <TheNavBar />
         <LandingPage />
     </>
-
+    
 )
