@@ -1,10 +1,8 @@
+
 import { useContext } from 'react'
 
-import { Cards } from '../../components/Cards'
-
 import { PageContext } from '../../Contexts/PageContext'
-
-import { Container } from './styles'
+import { Container, Card, H6, P, CardContainer } from './styles'
 
 export const Benefits: React.FC = () => {
 
@@ -14,10 +12,21 @@ export const Benefits: React.FC = () => {
 
         <Container>
 
-            <Cards />
+            {
+                photos.length != 0 &&
+                    photos.map( (photo, index) => (
+
+                        <CardContainer key={ index }>
+                            <Card>
+                                <H6>{ photo }</H6>
+                            </Card>
+                            <P>{ titles[index] }</P>
+                        </CardContainer>
+
+                    ))
+            }
 
         </Container>
 
-    
     )
 }

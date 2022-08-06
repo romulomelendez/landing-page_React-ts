@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const Container = styled.div `
     
     display: grid;
-    grid-template-rows: 200px 1fr 1fr 1fr;
+    grid-template-rows: 86px 1fr 1fr 1fr;
     padding: 60px;
-    row-gap: 20px;
+    row-gap: 80px;
 
 `
 

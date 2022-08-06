@@ -2,12 +2,13 @@ import styled from 'styled-components'
 
 export const Container =  styled.div `
 
-    background-color: #808080;
+    height: 100%;
 
 `
 
 export const Title = styled.h1 `
 
+    width: 320px;
     color: #105a7d;
 
 `
@@ -15,5 +16,4 @@ export const Title = styled.h1 `
 export const Subtitle =  styled.h4 `
 
     color: #808080;
-
 `

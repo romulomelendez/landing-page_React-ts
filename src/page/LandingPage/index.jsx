@@ -36,13 +36,17 @@ export const LandingPage = () => {
 
             } else if( endpoint === 'todos' ) {
 
-                for(var i = 0; i < 10; i++) {
+                for(var i = 0; i < 7; i++) {
+
+                    titles[0] === '' && titles.shift()
                     setTitles(old => [...old, data[i].title])
                 }
 
             } else {
 
-                for(var i = 0; i < 10; i++) {
+                for(var i = 0; i < 7; i++) {
+
+                    photos[0] === '' && photos.shift()
                     setPhotos(old => [...old, data[i].url])
                     setMainImage(data[0].thumbnailUrl)
                 }

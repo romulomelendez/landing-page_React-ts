@@ -5,9 +5,46 @@ export const Container = styled.div `
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 52px;
     width: 100%;
-    height: 300px;
-    background-color: aqua;
+    height: 500px;
+
+`
+
+export const CardContainer = styled.div `
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    gap: 10px;
+
+`
+
+export const Card = styled.div `
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    width: 112px;
+    border-radius: 50%;
+    background-color: #2ca6ee;
+
+`
+
+export const H6 = styled.h6 `
+
+    font-size: 4pt;
+
+`
+
+export const P = styled.p `
+
+    color: #808080;
+    font-size: 10pt;
+    text-align: center;
 
 `
