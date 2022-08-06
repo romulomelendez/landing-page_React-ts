@@ -1,9 +1,23 @@
+import { useContext } from 'react'
+
+import { Cards } from '../../components/Cards'
+
+import { PageContext } from '../../Contexts/PageContext'
+
 import { Container } from './styles'
 
-export const Benefits: React.FC = () => (
+export const Benefits: React.FC = () => {
 
-    <Container>
+    const { photos, titles } = useContext(PageContext)
 
-    </Container>
+    return (
 
-)
+        <Container>
+
+            <Cards />
+
+        </Container>
+
+    
+    )
+}

@@ -60,8 +60,8 @@ export const LandingPage = () => {
         }
 
         handleApiCall('posts')
-        // handleApiCall('todos')
-        // handleApiCall('photos')
+        handleApiCall('todos')
+        handleApiCall('photos')
 
     }, [])
 
