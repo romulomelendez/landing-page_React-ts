@@ -1,23 +1,36 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useContext } from 'react'
 
 import { Top } from '../../components/Top'
+import { Benefits } from '../../components/Benefits'
+
+import { PageContext } from '../../Contexts/PageContext'
 
 import { Container } from './styles'
 
-export const LandingPage: React.FC = () => {
+export const LandingPage = () => {
 
-    const [titles, setTitles] = useState<string[]>([])
-    const [body, setBody] = useState<string[]>([])
-    const [photos, setPhotos] = useState<string[]>([])
-    const [mainImage, setMainImage] = useState('')
+    const {
+        
+        titles,
+        setTitles,
+        body,
+        setBody,
+        photos,
+        setPhotos,
+        mainImage,
+        setMainImage
+
+    } = useContext(PageContext)
 
     useEffect(() => {
 
-        const handleData = (data: any, endpoint: string): void => {
+        const handleData = ( data, endpoint ) => {
 
             if( endpoint === 'posts' ) {
 
                 for(var i = 0; i < 10; i++) {
+
+                    body[0] === '' && body.shift()
                     setBody(old => [...old, data[i].body])
                 }
 
@@ -38,7 +51,7 @@ export const LandingPage: React.FC = () => {
 
         }
       
-        const handleApiCall = (endpoint: string): void => {
+        const handleApiCall = (endpoint) => {
             
             fetch(import.meta.env.VITE_BASE_API_URL + endpoint)
                 .then(response => response.json())
@@ -47,8 +60,8 @@ export const LandingPage: React.FC = () => {
         }
 
         handleApiCall('posts')
-        handleApiCall('todos')
-        handleApiCall('photos')
+        // handleApiCall('todos')
+        // handleApiCall('photos')
 
     }, [])
 
@@ -57,6 +70,7 @@ export const LandingPage: React.FC = () => {
         <Container>
 
             <Top />
+            <Benefits />
 
         </Container>
 
