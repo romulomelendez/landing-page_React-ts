@@ -1,8 +1,8 @@
 import { useContext } from 'react'
 
-import { Container, ResponsibilitiesSection, ImageSection } from './styles'
-
 import { PageContext } from '../../Contexts/PageContext'
+
+import { Container, ResponsibilitiesSection, ImageSection } from './styles'
 
 export const Responsibilities: React.FC = () => {
 
