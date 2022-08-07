@@ -2,6 +2,7 @@ import { useEffect, useContext } from 'react'
 
 import { Top } from '../../components/Top'
 import { Benefits } from '../../components/Benefits'
+import { Responsibilities } from '../../components/Responsibilities'
 
 import { PageContext } from '../../Contexts/PageContext'
 
@@ -75,6 +76,7 @@ export const LandingPage = () => {
 
             <Top />
             <Benefits />
+            <Responsibilities />
 
         </Container>
 
