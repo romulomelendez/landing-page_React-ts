@@ -29,10 +29,11 @@ export const LandingPage = () => {
 
             if( endpoint === 'posts' ) {
 
-                for(var i = 0; i < 10; i++) {
+                for(var i = 0; i < 7; i++) {
 
                     body[0] === '' && body.shift()
                     setBody(old => [...old, data[i].body])
+                    
                 }
 
             } else if( endpoint === 'todos' ) {
