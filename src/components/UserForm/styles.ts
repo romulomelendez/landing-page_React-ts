@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-// Container, InfosContainer, FormContainer, Form, Input
 
 export const Container = styled.div ``
 
