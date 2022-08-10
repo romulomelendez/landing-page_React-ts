@@ -8,10 +8,6 @@ export const NavBar = styled.nav `
     width: 100%;
     box-shadow: 0 6px 20px 0px #cecece;
 
-    @media (max-width: 750px) {
-        width: 750px !important;
-    }
-
 `
 
 export const MiniContainer = styled.div `
@@ -23,7 +19,6 @@ export const MiniContainer = styled.div `
     height: 100%;
     width: 15%;
     margin-left: 110px;
-    background-color: red;
 
 `
 

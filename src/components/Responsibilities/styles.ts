@@ -7,7 +7,7 @@ export const Container = styled.div `
     height: 530px;
     width: 100%;
     column-gap: 20px;
-    margin: 20px auto 20px auto;
+    /* margin: 20px auto 20px auto; */
    
 
     @media (max-width: 1484px) {
@@ -17,7 +17,7 @@ export const Container = styled.div `
         height: max-content;
         width: 55%;
         row-gap: 25px;
-        margin-top: -200px;
+        /* margin-top: -270px; */
     }
 
     @media (max-width: 1211px) {
@@ -25,6 +25,7 @@ export const Container = styled.div `
         margin-bottom: 160px;
         height: min-content;
         grid-template-rows: 1fr max-content;
+        /* margin-top: -200px; */
     }
 
 `
