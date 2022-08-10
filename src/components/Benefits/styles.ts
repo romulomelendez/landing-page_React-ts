@@ -8,6 +8,7 @@ export const Container = styled.div `
     gap: 52px;
     width: 100%;
     height: 500px;
+    margin-top: 40px;
 
 `
 
@@ -31,7 +32,7 @@ export const Card = styled.div `
     height: 112px;
     width: 112px;
     border-radius: 50%;
-    background-color: #2ca6ee;
+    background-image: linear-gradient(#2ca6ee, #1a6691);
 
 `
 
