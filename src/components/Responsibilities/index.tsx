@@ -1,6 +1,6 @@
 import { useContext, useEffect } from 'react'
 
-import { PageContext } from '../../Contexts/PageContext'
+import { PageContext } from '../../contexts/PageContext'
 
 // import a photo to use in the component
 import MainImage from '../../assets/images/happy-man.png'

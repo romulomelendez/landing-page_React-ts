@@ -22,6 +22,7 @@ export const Container = styled.div `
 
     @media (max-width: 1211px) {
         margin-top: 0px;
+        margin-bottom: 160px;
         height: min-content;
         grid-template-rows: 1fr max-content;
     }

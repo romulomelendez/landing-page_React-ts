@@ -1,5 +1,5 @@
-import { FinalMessage } from '../FinalMessage'
 import { Form } from '../Form'
+import { FinalMessage } from '../FinalMessage'
 
 import { Container } from './styles'
 

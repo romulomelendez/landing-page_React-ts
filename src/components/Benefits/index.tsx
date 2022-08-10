@@ -1,7 +1,7 @@
 
 import { useContext } from 'react'
 
-import { PageContext } from '../../Contexts/PageContext'
+import { PageContext } from '../../contexts/PageContext'
 import { Container, Card, H6, P, CardContainer } from './styles'
 
 export const Benefits: React.FC = () => {

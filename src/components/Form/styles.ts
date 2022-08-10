@@ -6,7 +6,6 @@ export const Container = styled.form `
     grid-template-rows: repeat(4, 40px);
     row-gap: 50px;
 
-
     label {
         color: #808080;
     }
@@ -60,5 +59,6 @@ export const Button = styled.button `
     justify-content: center;
     align-items: center;
     font-size: 12pt;
+    margin-top: 25px;
 
 `

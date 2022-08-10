@@ -1,7 +1,24 @@
 import styled from 'styled-components'
 
-export const Container = styled.div ``
+export const Container = styled.div `
 
-export const Title = styled.h1 ``
+    display: grid;
+    padding: 20px;
+    height: max-content;
+    width: 100%;
+    row-gap: 30px;
 
-export const Message = styled.p ``
+`
+
+export const Title = styled.h1 `
+
+    font-size: 40pt;
+    color: #19628b;
+    
+`
+
+export const Message = styled.p `
+
+    color: #808080;
+
+`

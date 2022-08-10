@@ -5,7 +5,7 @@ import { Benefits } from '../../components/Benefits'
 import { Responsibilities } from '../../components/Responsibilities'
 import { UserForm } from '../../components/UserForm'
 
-import { PageContext } from '../../Contexts/PageContext'
+import { PageContext } from '../../contexts/PageContext'
 
 import { Container } from './styles'
 

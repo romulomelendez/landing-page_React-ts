@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 
-import { PageContext } from '../../Contexts/PageContext'
+import { PageContext } from '../../contexts/PageContext'
 
 import { Container, Title, Message} from './styles'
 
@@ -12,8 +12,8 @@ export const FinalMessage: React.FC = () => {
 
         <Container>
 
-            <Title>{ titles }</Title>
-            <Message>{ titles }</Message>
+            <Title>{ (titles[0]) + titles[1] }</Title>
+            <Message>{ body[0] + body[1] }.</Message>
 
         </Container>
 
