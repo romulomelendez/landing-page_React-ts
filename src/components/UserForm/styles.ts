@@ -5,9 +5,3 @@ export const Container = styled.div ``
 export const InfosContainer = styled.div ``
 
 export const FormContainer = styled.div ``
-
-export const Form = styled.form ``
-
-export const Input = styled.input ``
-
-export const Button = styled.button ``

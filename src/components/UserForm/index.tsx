@@ -1,4 +1,6 @@
-import { Container, InfosContainer, FormContainer, Form, Input, Button} from './styles'
+import { Form } from '../Form'
+
+import { Container, InfosContainer, FormContainer } from './styles'
 
 export const UserForm: React.FC = () => {
 
@@ -11,12 +13,7 @@ export const UserForm: React.FC = () => {
             </InfosContainer>
 
             <FormContainer>
-                <Form>
-                    <Input />
-                    <Input />
-                    <Input />
-                    <Button />
-                </Form>
+                <Form />
             </FormContainer>
 
         </Container>
