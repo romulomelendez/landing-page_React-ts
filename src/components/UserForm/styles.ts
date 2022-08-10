@@ -16,7 +16,3 @@ export const Container = styled.div `
     }
 
 `
-
-export const InfosContainer = styled.div ``
-
-export const FormContainer = styled.div ``
