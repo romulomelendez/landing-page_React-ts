@@ -7,6 +7,10 @@ export const Container = styled.div `
     margin: 40px 90px 0px 100px;
     /* row-gap: 80px */
 
+    @media (max-width: 1484px) {
+        place-items: center;
+    }
+
 `
 
 export const Title = styled.h1 `

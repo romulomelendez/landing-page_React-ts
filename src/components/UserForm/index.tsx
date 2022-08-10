@@ -9,7 +9,7 @@ export const UserForm: React.FC = () => {
         <Container>
 
             <InfosContainer>
-
+                teste
             </InfosContainer>
 
             <FormContainer>
