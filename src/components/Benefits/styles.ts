@@ -24,7 +24,7 @@ export const CardContainer = styled.div `
 
 `
 
-export const Card = styled.div `
+export const RadialCard = styled.div `
 
     display: flex;
     justify-content: center;
@@ -42,7 +42,7 @@ export const H6 = styled.h6 `
 
 `
 
-export const P = styled.p `
+export const Description = styled.p `
 
     color: #808080;
     font-size: 10pt;
