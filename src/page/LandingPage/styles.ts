@@ -3,9 +3,9 @@ import styled from 'styled-components'
 export const Container = styled.div `
     
     display: grid;
-    grid-template-rows: 86px 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
     margin: 40px 90px 0px 100px;
-    row-gap: 100px;
+    row-gap: 150px;
 
     @media (max-width: 1484px) {
         place-items: center;

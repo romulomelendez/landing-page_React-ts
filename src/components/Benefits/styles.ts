@@ -8,7 +8,7 @@ export const Container = styled.div `
     gap: 52px;
     width: 100%;
     height: 500px;
-    /* margin-top: -350px; */
+    margin-top: -80px; 
 
 `
 
