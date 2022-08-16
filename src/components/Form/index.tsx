@@ -1,6 +1,14 @@
+import { useContext } from 'react'
+
+import { PageContext } from '../../contexts/PageContext'
+
 import { Container, Input, Button, InputContainer, InternalContainer, EnterpriseContainer } from './styles'
 
 export const Form: React.FC = () => {
+
+    const { titles } = useContext(PageContext)
+    let splittedString = titles[0].split(' ')
+    let customTitle = splittedString[0] + ' ' + splittedString[1] + ' ' + splittedString[2]
 
     return (
 
@@ -8,21 +16,21 @@ export const Form: React.FC = () => {
 
             <EnterpriseContainer>
 
-                <label>RAZÃO SOCIAL</label>
-                <Input type="text" placeholder='Digite o nome da sua empresa' />
+                <label>{ (splittedString[0] + ' ' + splittedString[1]).toUpperCase() }</label>
+                <Input type="text" placeholder={ titles[2] } />
 
             </EnterpriseContainer>
 
             <InputContainer>
 
                 <InternalContainer>
-                    <label>Nome:</label>
-                    <Input type="text" placeholder='Digite aqui seu nome' />
+                    <label>{ splittedString[2] }</label>
+                    <Input type="text" placeholder={ titles[0] } />
                 </InternalContainer>
 
                 <InternalContainer>
-                    <label>E-mail:</label>
-                    <Input type="email" placeholder='contato@empresa.com.br' />
+                    <label>{ splittedString[3] }</label>
+                    <Input type="email" placeholder={ splittedString[4] + '@' + splittedString[2] + '.com' } />
                 </InternalContainer>
 
             </InputContainer>
@@ -30,18 +38,18 @@ export const Form: React.FC = () => {
             <InputContainer>
                 
                 <InternalContainer>
-                    <label>Telefone:</label>
+                    <label>{ splittedString[4] }</label>
                     <Input type="text" placeholder='()_____-____' />
                 </InternalContainer>
 
                 <InternalContainer>
-                    <label>Site:</label>
-                    <Input type="text" placeholder='suaempresa.com.br'/>
+                    <label>{ splittedString[5] }</label>
+                    <Input type="text" placeholder={ splittedString[2] + '.com.br' }/>
                 </InternalContainer>
 
             </InputContainer>
 
-            <Button type='submit'>ENVIAR</Button>
+            <Button type='submit'>{ splittedString[1] }</Button>
             
         </Container>
 
