@@ -10,11 +10,14 @@ export const TheNavBar: React.FC = () => {
 
     const { titles } = useContext(PageContext)
     
+    let splittedString = titles[0].split(' ')
+    let sentence = splittedString[0] + ' ' + splittedString[1] + ' ' + splittedString[2]
+    
     return (
     
         <NavBar>
             <MiniContainer>
-                <Text>{ titles[0] }</Text>
+                <Text>{ sentence }</Text>
                 <Img src={Pagcom_logo} alt="Pagcom logo" height="32" />
             </MiniContainer>
         </NavBar>
