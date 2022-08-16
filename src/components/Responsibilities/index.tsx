@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react'
+import { useContext } from 'react'
 
 import { PageContext } from '../../contexts/PageContext'
 
@@ -9,23 +9,14 @@ import { Container, ResponsibilitiesSection, ImageSection, Image, Title, Respons
 
 export const Responsibilities: React.FC = () => {
 
-    const { titles, body, mainImage } = useContext(PageContext)
-
-    // useEffect(() => {
-      
-    //     body.map( item => {
-    //         (item.split(' ')).slice(0, 3)
-    //     })
-
-    // }, [])
+    const { titles, body } = useContext(PageContext)
     
-
     return (
 
         <Container>
 
             <ResponsibilitiesSection>
-               <Title>VAMOS JUNTOS</Title>
+               <Title>{ titles[0].toUpperCase() }</Title>
                <ResponsabilitiesItems>
                     {
                         body.map( (item, index) => (
@@ -39,8 +30,7 @@ export const Responsibilities: React.FC = () => {
             </ResponsibilitiesSection>
 
             <ImageSection>
-                {/* <img src={ mainImage } alt="happy man image" /> */}
-                <Image src={MainImage} alt="happy man image" />
+                <Image src={MainImage} alt="Happy man image" />
             </ImageSection>
 
         </Container>
