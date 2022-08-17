@@ -7,8 +7,7 @@ export const Container = styled.div `
     height: 530px;
     width: 100%;
     column-gap: 20px;
-    /* margin: 20px auto 20px auto; */
-   
+    /* margin: 20px auto 20px auto; */   
 
     @media (max-width: 1484px) {
         grid-template-columns: none;
@@ -30,7 +29,13 @@ export const Container = styled.div `
 
 `
 
-export const Title = styled.h1 ` color: #105a7d; `
+export const Title = styled.h1 `
+
+    color: #105a7d;
+    font-weight: 800;
+    font-size: 29pt;
+    
+`
 
 export const ResponsabilitiesItems = styled.div `
 
@@ -77,5 +82,11 @@ export const Item = styled.div `
     gap: 5px;
 
 `
-export const Index = styled.p ` color: #1a6591; `
+export const Index = styled.p `
+
+    color: #1a6591;
+    font-weight: 800;
+    
+`
+
 export const Content = styled.p ` color: #808080; `
