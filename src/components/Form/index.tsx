@@ -8,7 +8,6 @@ export const Form: React.FC = () => {
 
     const { titles } = useContext(PageContext)
     let splittedString = titles[0].split(' ')
-    let customTitle = splittedString[0] + ' ' + splittedString[1] + ' ' + splittedString[2]
 
     return (
 

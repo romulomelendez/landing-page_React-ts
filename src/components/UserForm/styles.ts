@@ -18,5 +18,5 @@ export const Container = styled.div `
         place-items: center;
         grid-template-rows: repeat(2, 50%);
     }
-
+    
 `
