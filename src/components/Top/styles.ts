@@ -8,12 +8,19 @@ export const Container =  styled.div `
 
 export const Title = styled.h1 `
 
-    width: 320px;
+    max-width: 500px;
+    width: 100%;
     color: #105a7d;
+    font-size: 40pt;
 
 `
 
 export const Subtitle =  styled.h4 `
 
+    max-width: 700px;
+    width: 100%;
     color: #808080;
+    font-size: 12pt;
+    font-weight: 300;
+
 `
