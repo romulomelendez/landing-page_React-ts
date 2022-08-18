@@ -2,13 +2,13 @@ import styled from 'styled-components'
 
 export const Container = styled.div `
     
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 52px;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
+    grid-gap: 52px;
+    width: 99%;
     height: 500px;
-    margin-top: -80px; 
+    /* margin-top: -80px;  */
+    place-items: center;
 
 `
 

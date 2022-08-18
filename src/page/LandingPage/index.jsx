@@ -2,8 +2,8 @@ import { useEffect, useContext } from 'react'
 
 import { Top } from '../../components/Top'
 import { Benefits } from '../../components/Benefits'
-import { Responsibilities } from '../../components/Responsibilities'
-import { UserForm } from '../../components/UserForm'
+// import { Responsibilities } from '../../components/Responsibilities'
+// import { UserForm } from '../../components/UserForm'
 
 import { PageContext } from '../../contexts/PageContext'
 
@@ -78,8 +78,8 @@ export const LandingPage = () => {
 
             <Top />
             <Benefits />
-            <Responsibilities />
-            <UserForm />
+            {/* <Responsibilities />
+            <UserForm /> */}
 
         </Container>
 
