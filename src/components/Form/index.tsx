@@ -2,7 +2,7 @@ import { useContext } from 'react'
 
 import { PageContext } from '../../contexts/PageContext'
 
-import { Container, Input, Button, InputContainer, InternalContainer, EnterpriseContainer } from './styles'
+import { Container, EnterpriseContainer, Input, InputContainer, InternalContainer, Button } from './styles'
 
 export const Form: React.FC = () => {
 
@@ -14,10 +14,8 @@ export const Form: React.FC = () => {
         <Container>
 
             <EnterpriseContainer>
-
-                <label>{ (splittedString[0] + ' ' + splittedString[1]).toUpperCase() }</label>
+                <label>{ splittedString[0] + ' ' + splittedString[1] }</label>
                 <Input type="text" placeholder={ titles[2] } />
-
             </EnterpriseContainer>
 
             <InputContainer>
@@ -38,7 +36,7 @@ export const Form: React.FC = () => {
                 
                 <InternalContainer>
                     <label>{ splittedString[4] }</label>
-                    <Input type="text" placeholder='()_____-____' />
+                    <Input type="text" placeholder='() _____-____' />
                 </InternalContainer>
 
                 <InternalContainer>

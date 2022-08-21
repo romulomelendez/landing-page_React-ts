@@ -7,8 +7,8 @@ export const Container = styled.div `
     grid-gap: 52px;
     width: 99%;
     height: 500px;
-    /* margin-top: -80px;  */
-    place-items: center;
+    justify-content: center;
+    align-items: center;
 
 `
 

@@ -10,13 +10,16 @@ import { Container, ResponsibilitiesSection, ImageSection, Image, Title, Respons
 export const Responsibilities: React.FC = () => {
 
     const { titles, body } = useContext(PageContext)
+
+    let splittedString = titles[0].split(' ')
+    let titleSentence = splittedString[0] + ' ' + splittedString[1]
     
     return (
 
         <Container>
 
             <ResponsibilitiesSection>
-               <Title>{ titles[0].toUpperCase() }</Title>
+               <Title>{ titleSentence.toUpperCase() }</Title>
                <ResponsabilitiesItems>
                     {
                         body.map( (item, index) => (

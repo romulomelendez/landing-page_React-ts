@@ -1,30 +1,37 @@
-import styled from "styled-components"
+import styled from 'styled-components'
+
+// ############## LIST STYLES #################################################################################
 
 export const Container = styled.div `
 
     display: grid;
-    grid-template-columns: 60% 40%;
-    height: 530px;
-    width: 100%;
-    column-gap: 20px;
-    /* margin: 20px auto 20px auto; */   
+    grid-template-columns: repeat(auto-fit, minmax(200px, 600px));
+    justify-content: center;
+    column-gap: 1.6em;
+    height: max-content;
 
-    @media (max-width: 1484px) {
-        grid-template-columns: none;
-        grid-template-rows: 1fr 1fr;
-        place-items: center;
-        height: max-content;
-        width: 55%;
-        row-gap: 25px;
-        /* margin-top: -270px; */
+`
+
+export const ResponsibilitiesSection = styled.div `
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 600px));
+    padding: 2px;
+
+    @media (max-width: 1485px) {
+        margin: 65px auto 65px auto;
     }
 
-    @media (max-width: 1211px) {
-        margin-top: 0px;
-        margin-bottom: 160px;
-        height: min-content;
-        grid-template-rows: 1fr max-content;
-        /* margin-top: -200px; */
+    @media (max-width: 1247px) {
+        margin: 85px auto 65px auto;
+    }
+
+    @media (max-width: 972px) {
+        margin: 285px auto 65px auto;
+    }
+
+    @media (max-width: 700px) {
+        margin: 1000px auto 65px auto;
     }
 
 `
@@ -33,53 +40,32 @@ export const Title = styled.h1 `
 
     color: #105a7d;
     font-weight: 800;
-    font-size: 29pt;
+    font-size: 45pt;
+    margin-bottom: 50px;
+    
+    @media (max-width: 500px) {
+        font-size: 28pt;
+    }
     
 `
 
 export const ResponsabilitiesItems = styled.div `
 
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 30px;
 
 `
 
-export const ResponsibilitiesSection = styled.div `
-
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-    padding: 5px;
-
-`
-
-export const ImageSection = styled.div `
-
-    overflow: hidden;
-
-`
-
-export const Image = styled.img `
-
-    height: 100%;
-    width: 100%;
-
-    @media (max-width: 1484px) {
-        height: 40em;
-        width: 40em;
-    }
-
-    @media (max-width: 1211px) {
-        display: none;
-    }
-
-`
 export const Item = styled.div `
 
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
+    display: grid;
+    grid-template-columns: max-content minmax(100px, 550px);
+    column-gap: 5px;
+
+    @media (max-width: 400px) {
+        width: 200px;
+        font-size: 10pt;
+    }
 
 `
 export const Index = styled.p `
@@ -90,3 +76,26 @@ export const Index = styled.p `
 `
 
 export const Content = styled.p ` color: #808080; `
+
+// ############## IMAGE STYLES #################################################################################
+
+export const ImageSection = styled.div `
+
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+
+`
+
+export const Image = styled.img `
+
+    height: 100%;
+    width: 900px;
+
+    @media (max-width: 670px) {
+
+        display: none;
+
+    }
+
+`

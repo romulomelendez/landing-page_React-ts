@@ -3,9 +3,12 @@ import styled from "styled-components"
 export const NavBar = styled.nav `
 
     display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
     height: 80px;
-    max-width: 100vw;
     width: 100%;
+    max-width: 100vw;
     box-shadow: 0 6px 20px 0px #cecece;
 
 `
@@ -13,12 +16,8 @@ export const NavBar = styled.nav `
 export const MiniContainer = styled.div `
 
     display: grid;
-    grid-template-columns: 150px 50px;
+    grid-template-columns: 200px 80px;
     place-items: center;
-    column-gap: 0.8rem;
-    height: 100%;
-    width: 15%;
-    margin-left: 110px;
 
 `
 

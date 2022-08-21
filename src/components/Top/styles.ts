@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
-export const Container =  styled.div `
+export const Container = styled.div `
 
     height: max-content;
+    margin: auto;
 
 `
 
@@ -16,7 +17,7 @@ export const Title = styled.h1 `
 
 `
 
-export const Subtitle =  styled.h4 `
+export const Subtitle = styled.h4 `
 
     max-width: 700px;
     width: 100%;

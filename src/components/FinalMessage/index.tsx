@@ -12,7 +12,7 @@ export const FinalMessage: React.FC = () => {
 
         <Container>
 
-            <Title>{ (titles[0]) + titles[1] }</Title>
+            <Title>{ (titles[0] + titles[1]).toUpperCase() }</Title>
             <Message>{ body[0] + body[1] }.</Message>
 
         </Container>
