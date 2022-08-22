@@ -18,6 +18,11 @@ export const MiniContainer = styled.div `
     display: grid;
     grid-template-columns: 200px 80px;
     place-items: center;
+    margin-left: -380px;    
+
+    @media (max-width: 950px) {
+        margin-left: 0;
+    }
 
 `
 
