@@ -1,4 +1,4 @@
-import { useContext } from 'react'
+import { useContext, useEffect, useState } from 'react'
 
 import { PageContext } from '../../contexts/PageContext'
 
@@ -10,22 +10,19 @@ import { Container, ResponsibilitiesSection, ImageSection, Image, Title, Respons
 export const Responsibilities: React.FC = () => {
 
     const { titles, body } = useContext(PageContext)
-
-    let splittedString = titles[0].split(' ')
-    let titleSentence = splittedString[0] + ' ' + splittedString[1]
     
     return (
 
         <Container>
 
             <ResponsibilitiesSection>
-               <Title>{ titleSentence.toUpperCase() }</Title>
+               <Title>{ titles[0].slice(0, 11) }</Title>
                <ResponsabilitiesItems>
                     {
                         body.map( (item, index) => (
                             <Item key={ index }>
                                 <Index>{ index }.</Index>
-                                <Content>{ item }</Content>
+                                <Content>{ item.slice(0, 70) }</Content>
                             </Item>
                         ))
                     }
