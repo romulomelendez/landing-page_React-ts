@@ -25,7 +25,6 @@ export const Form: React.FC = () => {
 
     const handleForm = () => {
         let formDatas = Object.values(formValues)
-        // formDatas.find(element => element == '')
         formDatas.indexOf('') === -1 ? alert('OK!') : alert('Form inputs cannot be empty')
     }
 

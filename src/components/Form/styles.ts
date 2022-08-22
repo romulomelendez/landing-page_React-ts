@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.form `
 
    display: grid;
-   grid-template-rows: repeat(auto-fit, 40px);
+   grid-template-rows: repeat(auto-fit, max-content);
    height: max-content;
    max-width: 600px;
    width: 100%;
@@ -63,7 +63,7 @@ export const InternalContainer = styled.div `
 
     display: grid;
     grid-template-rows: repeat(2, max-content);
-    row-gap: 7px;
+    /* row-gap: 7px; */
 
 `
 
