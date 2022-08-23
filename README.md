@@ -1,4 +1,4 @@
-# 🚧 LADING PAGE PROJECT ARE UNDER OF CONSTRUCTION 🚧
+# 🚧 LANDING PAGE PROJECT ARE UNDER OF CONSTRUCTION 🚧
 
 ## A step-to-step tutorial to run the project:
 ## Download Dependencies
