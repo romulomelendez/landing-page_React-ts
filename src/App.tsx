@@ -1,15 +1,11 @@
-import { LandingPage } from './page/LandingPage'
-import { TheNavBar } from './components/TheNavBar'
+import { LandingPage } from "./page/LandingPage";
+import { TheNavBar } from "./components/TheNavBar";
 
-import { PageContextProvider } from './contexts/PageContext'
+import { PageContextProvider } from "./contexts/PageContext";
 
 export const App: React.FC = () => (
-
-    <PageContextProvider>
-
-        <TheNavBar />
-        <LandingPage />
-        
-    </PageContextProvider>
-    
-)
+  <PageContextProvider>
+    <TheNavBar />
+    <LandingPage />
+  </PageContextProvider>
+);

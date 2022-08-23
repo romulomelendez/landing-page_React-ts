@@ -1,13 +1,11 @@
-import { Form } from '../Form'
-import { FinalMessage } from '../FinalMessage'
+import { Form } from "../Form";
+import { FinalMessage } from "../FinalMessage";
 
-import { Container } from './styles'
+import { Container } from "./styles";
 
 export const UserForm: React.FC = () => (
-
-    <Container>
-        <FinalMessage />
-        <Form />
-    </Container>
-
-)
+  <Container>
+    <FinalMessage />
+    <Form />
+  </Container>
+);
